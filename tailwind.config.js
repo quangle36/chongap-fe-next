@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Inter', ...fontFamily.sans],
+        primary: ['SVN Gilroy', ...fontFamily.sans],
+        'SVN-Gilroy': 'SVN Gilroy',
+        'UTM-Avo': 'UTM Avo',
+        'SVN-Cintra': 'SVN Cintra',
       },
       colors: {
         primary: {
@@ -52,5 +55,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require('@tailwindcss/forms'), require("daisyui")],
 };
